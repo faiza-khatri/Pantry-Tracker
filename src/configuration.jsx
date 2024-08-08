@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";  // Import for authentication
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC9ktCSxE693quF6Dk1VKtjLygeNNBlNzk",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "pantry-tracker-9a381.firebaseapp.com",
   databaseURL: "https://pantry-tracker-9a381-default-rtdb.firebaseio.com",
   projectId: "pantry-tracker-9a381",
