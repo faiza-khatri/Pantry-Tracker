@@ -1,0 +1,270 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #021123;
+}
+
+/* Code block styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Common form styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: #071c3589;
+  padding: 5px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container h1, .form-container h2 {
+  margin-bottom: 5px;
+  color: #c0bfbf;
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #14b4aa;
+  font-weight: bold;
+}
+
+.form-container h1 {
+  font-size: 28px;
+}
+
+.form-container h2 {
+  font-size: 30px;
+}
+
+.form-container input {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #0c263a5b;
+  color: #c0bfbf;
+}
+
+.form-container input::placeholder {
+  color: #aaa;
+}
+
+.form-container button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #1BA098;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #34b2aa;
+}
+
+/* Error message styling */
+.form-container p {
+  color: #c0bfbf;
+  margin: 5px auto 5px auto;
+}
+
+.linkSignUp {
+  color: #c0bfbf;
+}
+
+.linkSignUp:hover{
+  color: #dcd9d9;
+}
+
+
+.welcome {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 7rem;
+  color: #1BA098;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  visibility: hidden;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #071c35;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #071c3589;
+  color: #14b4aa;
+  font-weight: bold;
+}
+
+td {
+  color: #c0bfbf;
+}
+
+tr:hover {
+  background-color: #0c263a;
+}
+
+tr:nth-child(even) {
+  background-color: #0c263a5b;
+}
+
+/* Table header styling */
+thead {
+  background-color: #021d3a;
+  color: #14b4aa;
+  text-align: left;
+}
+
+/* Table row styling */
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #0c263a5b;
+}
+
+.qtBtns {
+  min-width: 1.75rem;
+  min-height: 1.5rem;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  background-color: #1BA098;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.qtBtns:hover{
+  background-color: #14b4aa;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  max-width: 600px;
+  margin: 0;
+  border-bottom: 1px solid #f2f2f2;
+  min-width: 100%;
+}
+
+.navbar h1 {
+  color: #1BA098;
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar .links{
+  margin-left: auto;
+  margin-top: 20px;
+
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 1.75rem;
+  min-height: 1.5rem;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  background-color: #1BA098;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  color: #14b4aa;
+}
+
+.formAdd {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.formAdd input, .formAdd button{
+  margin: 10px;
+}
+
+.formAdd input {
+  min-width: 30px;
+  background-color: #0c263a5b;
+  padding: 5px;
+  color: #c0bfbf;
+}
+
+.formAdd input::placeholder{
+  color: #c0bfbf;
+}
+
+.summary {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 20vh;
+  width: 80%;
+  margin: auto;
+}
+
+.summary h2{
+  background-color: #021d3a;
+  margin: 10px;
+  padding: 50px;
+  font-size: 1.25rem;
+  color: #0bdbcd;
+}
+
+.summary h2:hover{
+  background-color: #071c35;
+  color: #1ce8db;
+  border-radius: 5px;
+}
+
+ 
+.prediction p {
+  color: #0bdbcd;
+}
